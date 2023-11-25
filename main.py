@@ -8,4 +8,8 @@ for i in range(0, 10):
 
 
 f = open("result.txt", "w")
-f.write("test")
+sum = 0
+for number in user_input_list:
+    f.write(number)
+    sum += number
+f.write(sum)
