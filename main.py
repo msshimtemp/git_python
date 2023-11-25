@@ -6,4 +6,6 @@ for i in range(0, 10):
     user_input = input(f"숫자를 입력해주세요({i}/10)")
     user_input_list.append(user_input)
 
-print(user_input_list)
+
+f = open("result.txt", "w")
+f.write("test")
