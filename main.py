@@ -4,12 +4,13 @@
 user_input_list = []
 for i in range(0, 10):
     user_input = input(f"숫자를 입력해주세요({i}/10)")
+    user_input = int(user_input)
     user_input_list.append(user_input)
 
 
 f = open("result.txt", "w")
 sum = 0
 for number in user_input_list:
-    f.write(number)
+    f.write(str(number))
     sum += number
-f.write(sum)
+f.write(str(sum))
